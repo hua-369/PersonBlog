@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>关于我</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/me.css"/>
+	</head>
+	<body>
+		<!-- 导航 -->
+		<nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+			<div class="ui container">
+				<div class="ui inverted secondary stackable menu">
+					<h2 class="ui teal header item">Blog</h2>
+					<a href="#" class="m-item item m-mobile-hide"><i class="small home icon"></i> 首页</a>
+					<a href="#" class="m-item item m-mobile-hide"><i class="small idea icon"></i> 分类</a>
+					<a href="#" class="m-item item m-mobile-hide"><i class="small tags icon"></i> 标签</a>
+					<a href="#" class="m-item item m-mobile-hide"><i class="small clone icon"></i> 归档</a>					
+					<a href="#" class="active m-item item m-mobile-hide"><i class="small info icon"></i> 关于我</a>
+					<div class="right m-item item m-mobile-hide">
+						<div class="ui icon input">
+							<input type="text" placeholder="搜索" />
+							<i class="search link icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+				<i class="sidebar icon"></i>
+			</a>
+		</nav>
+		<!-- 中间内容 -->
+		<div class="m-container m-padded-tb-big">
+			<div class="ui stackable grid">
+				<div class="eleven wide column">
+					<img src="../static/image/006.jpg" th:src="@{/image/libai.jpeg}" class="ui rounded image" style="width: 500px;">
+				</div>
+				<div class="five wide column">
+					<div class="ui top attached segment">关于我</div>
+					<div class="ui attached segment">
+						<p class="text">黄璇，现读于武汉纺织大学阳光小区计算机与人工智能学院软件工程系，喜好运动，尤其是打篮球，游戏打的不错，LOL，王者荣耀比较强，也喜好编程但比较菜</p>
+						<p class="text">有喜欢我的小伙伴，可以加我为好友，也可以关注我的GitHub</p>
+					</div>
+					<div class="ui attached segment">
+						<div class="ui orange basic left pointing label">创作</div>
+						<div class="ui orange basic left pointing label">游戏</div>
+						<div class="ui orange basic left pointing label">编程</div>
+						<div class="ui orange basic left pointing label">运动</div>
+					</div>
+					<div class="ui attached segment">
+						<div class="ui teal basic left pointing label m-margin-tb-tiny">java</div>
+						<div class="ui teal basic left pointing label m-margin-tb-tiny">LOL</div>
+						<div class="ui teal basic left pointing label m-margin-tb-tiny">王者荣耀</div>
+						<div class="ui teal basic left pointing label m-margin-tb-tiny">mysql</div>						
+					</div>
+					<div class="ui bottom attached segment">
+						<a href="#" th:href="#{about.code}" class="ui circular icon button"><i class="github icon"></i></a>
+						<a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+						<a href="#" class="ui qq icon button"><i class="qq icon"></i></a>
+					</div>
+					<div class="ui wechatqr flowing popup transition hidden">
+						<img src="../static/image/weChat.jpg" th:src="@{/image/weChat.jpg}" alt="" class="ui rounded image" style="width: 110px;" />
+					</div>
+					<div class="ui qqqr flowing popup transition hidden">
+						<img src="../static/image/weChat.jpg" th:src="@{/image/QQ.png}" alt="" class="ui rounded image" style="width: 110px;" />
+					</div>																			
+				</div>
+			</div>
+		</div>
+		<br />
+		<br />
+		<!-- 底部footer -->
+		<footer th:replace="_fragments ::footer" class="ui inverted vertical segment m-padded-tb-masive">
+		<div class="ui center aligned container">
+			<div class="ui inverted divided stackable grid">
+				<div class="three wide column">
+				 <div class="ui inverted link list">
+				  <div class="item">
+					<img src="../static/image/weChat.jpg" th:src="@{/image/weChat.jpg}" class="ui rounded image"alt="" style="width: 110px;" />
+				  </div>
+				 </div>
+				</div>
+				<div class="three wide column">
+					<h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+					<div class="ui inverted link list">
+						<a href="#" class="item">用户故事（User Story）</a>
+						<a href="#" class="item">用户故事（User Story）</a>
+						<a href="#" class="item">用户故事（User Story）</a>
+					</div>
+				</div>
+				<div class="three wide column">
+					<h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+					<div class="ui inverted link list">
+						<a href="#" class="item">QQ：2257380739</a>
+						<a href="#" class="item">电话：13545653230</a>
+					</div>
+				</div>				
+				<div class="seven wide column">
+					<h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
+					<p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客</p>
+				</div>
+			</div>
+			<div class="ui inverted section divider"></div>
+				<p class="m-text-thin m-text-spaced m-opacity-mini">我的邮箱：2257380739@qq.com</p>
+		</div>
+		</footer>
+		<th:block th:replace="_fragments ::script">
+		<script src="../static/js/jquery-3.4.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+		</th:block>
+		<script>
+			$('.menu.toggle').click(function(){
+				$('.m-item').toggleClass('m-mobile-hide');
+			}
+			);
+			$('.wechat').popup({
+				popup : $('.wechatqr'),
+				position: 'bottom center'
+			});
+			$('.qq').popup({
+				popup : $('.qqqr'),
+				position: 'bottom center'
+			});			
+		</script>
+	</body>
+</html>

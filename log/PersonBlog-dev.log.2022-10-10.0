@@ -1,0 +1,294 @@
+2022-10-10 17:47:12.582  INFO 24808 --- [main] com.huangxuan.PersonBlogApplication      : Starting PersonBlogApplication using Java 1.8.0_101 on LAPTOP-9KSL1NNR with PID 24808 (D:\java\项目\PersonBlog\target\classes started by 86135 in D:\java\项目\PersonBlog)
+2022-10-10 17:47:12.590 DEBUG 24808 --- [main] com.huangxuan.PersonBlogApplication      : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-10 17:47:12.591  INFO 24808 --- [main] com.huangxuan.PersonBlogApplication      : The following 1 profile is active: "dev"
+2022-10-10 17:47:13.358  INFO 24808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-10 17:47:13.458  INFO 24808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 5 JPA repository interfaces.
+2022-10-10 17:47:14.182  INFO 24808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-10 17:47:14.194  INFO 24808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-10 17:47:14.194  INFO 24808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-10 17:47:14.421  INFO 24808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-10 17:47:14.422  INFO 24808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1787 ms
+2022-10-10 17:47:14.581  INFO 24808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-10 17:47:14.636  INFO 24808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-10 17:47:14.800  INFO 24808 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-10 17:47:14.913  INFO 24808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-10 17:47:15.194  INFO 24808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-10 17:47:15.217  INFO 24808 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-10 17:47:16.092  INFO 24808 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-10 17:47:16.102  INFO 24808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 17:47:17.042  WARN 24808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-10 17:47:17.274  INFO 24808 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-10 17:47:17.597  INFO 24808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-10 17:47:17.606  INFO 24808 --- [main] com.huangxuan.PersonBlogApplication      : Started PersonBlogApplication in 5.63 seconds (JVM running for 8.102)
+2022-10-10 17:47:29.706  INFO 24808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 17:47:29.706  INFO 24808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-10 17:47:29.707  INFO 24808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-10 17:47:29.750  INFO 24808 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-10-10 17:47:29.874  WARN 24808 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-10-10 17:47:29.888  WARN 24808 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-10-10 17:47:29.896  INFO 24808 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : index
+2022-10-10 17:47:29.897  INFO 24808 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 17:47:32.325  INFO 24808 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 17:47:32.401  INFO 24808 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 17:47:32.401  INFO 24808 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 17:47:32.870  INFO 24808 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 17:47:32.915  INFO 24808 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 17:47:32.915  INFO 24808 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 19:03:17.014  WARN 24808 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m1s751ms36µs600ns).
+2022-10-10 19:22:02.387  WARN 24808 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s385ms44µs300ns).
+2022-10-10 20:16:32.413  INFO 24808 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-10-10 20:16:32.443  INFO 24808 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : result : index
+2022-10-10 20:16:32.444  INFO 24808 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:16:38.616  INFO 24808 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 20:16:38.634  INFO 24808 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 20:16:38.635  INFO 24808 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:16:39.531  INFO 24808 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 20:16:39.580  INFO 24808 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 20:16:39.580  INFO 24808 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:27:19.697  INFO 24808 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:27:19.700  INFO 24808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-10 20:27:19.715  INFO 24808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-10 20:27:27.652  INFO 35276 --- [main] com.huangxuan.PersonBlogApplication      : Starting PersonBlogApplication using Java 1.8.0_101 on LAPTOP-9KSL1NNR with PID 35276 (D:\java\项目\PersonBlog\target\classes started by 86135 in D:\java\项目\PersonBlog)
+2022-10-10 20:27:27.654 DEBUG 35276 --- [main] com.huangxuan.PersonBlogApplication      : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-10 20:27:27.655  INFO 35276 --- [main] com.huangxuan.PersonBlogApplication      : The following 1 profile is active: "dev"
+2022-10-10 20:27:28.467  INFO 35276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-10 20:27:28.560  INFO 35276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
+2022-10-10 20:27:29.364  INFO 35276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-10 20:27:29.373  INFO 35276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-10 20:27:29.373  INFO 35276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-10 20:27:29.758  INFO 35276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-10 20:27:29.758  INFO 35276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2066 ms
+2022-10-10 20:27:29.998  INFO 35276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-10 20:27:30.038  INFO 35276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-10 20:27:30.184  INFO 35276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-10 20:27:30.290  INFO 35276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-10 20:27:30.586  INFO 35276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-10 20:27:30.605  INFO 35276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-10 20:27:31.580  INFO 35276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-10 20:27:31.589  INFO 35276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:27:32.826  WARN 35276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-10 20:27:33.076  INFO 35276 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-10 20:27:33.447  INFO 35276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-10 20:27:33.456  INFO 35276 --- [main] com.huangxuan.PersonBlogApplication      : Started PersonBlogApplication in 6.456 seconds (JVM running for 10.322)
+2022-10-10 20:27:42.160  INFO 35276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 20:27:42.160  INFO 35276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-10 20:27:42.163  INFO 35276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-10 20:27:42.239  INFO 35276 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 20:27:42.472  INFO 35276 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 20:27:42.473  INFO 35276 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:27:43.754  INFO 35276 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 20:27:43.906  INFO 35276 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 20:27:43.907  INFO 35276 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:33:59.352  INFO 35276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:33:59.356  INFO 35276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-10 20:33:59.382  INFO 35276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-10 20:34:07.005  INFO 34144 --- [main] com.huangxuan.PersonBlogApplication      : Starting PersonBlogApplication using Java 1.8.0_101 on LAPTOP-9KSL1NNR with PID 34144 (D:\java\项目\PersonBlog\target\classes started by 86135 in D:\java\项目\PersonBlog)
+2022-10-10 20:34:07.009 DEBUG 34144 --- [main] com.huangxuan.PersonBlogApplication      : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-10 20:34:07.009  INFO 34144 --- [main] com.huangxuan.PersonBlogApplication      : The following 1 profile is active: "dev"
+2022-10-10 20:34:07.977  INFO 34144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-10 20:34:08.143  INFO 34144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156 ms. Found 5 JPA repository interfaces.
+2022-10-10 20:34:09.392  INFO 34144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-10 20:34:09.413  INFO 34144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-10 20:34:09.414  INFO 34144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-10 20:34:09.730  INFO 34144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-10 20:34:09.730  INFO 34144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2669 ms
+2022-10-10 20:34:09.895  INFO 34144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-10 20:34:09.946  INFO 34144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-10 20:34:10.247  INFO 34144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-10 20:34:10.433  INFO 34144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-10 20:34:10.948  INFO 34144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-10 20:34:10.979  INFO 34144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-10 20:34:12.458  INFO 34144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-10 20:34:12.479  INFO 34144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:34:14.032  WARN 34144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-10 20:34:14.400  INFO 34144 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-10 20:34:14.953  INFO 34144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-10 20:34:14.974  INFO 34144 --- [main] com.huangxuan.PersonBlogApplication      : Started PersonBlogApplication in 8.889 seconds (JVM running for 12.333)
+2022-10-10 20:34:19.649  INFO 34144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 20:34:19.650  INFO 34144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-10 20:34:19.652  INFO 34144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-10 20:34:19.742  INFO 34144 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 20:34:20.054  INFO 34144 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 20:34:20.054  INFO 34144 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:34:21.264  INFO 34144 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 20:34:21.423  INFO 34144 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 20:34:21.424  INFO 34144 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:35:18.638  INFO 34144 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.post', args=[Comment{id=null, nickname='小红', email='123@qq.com', profilePicture='null', commentContent='我也love you', createTime=null, blog=Blog{id=53, title='null', content='null', headPicture='null', mark='null', viewCount=null, isAdmire=false, isCopyright=false, isComment=false, isRecommend=false, issue=false, tagIds='null', createTime=null, updateTime=null, type=null, tags=[], user=null, description='null', comments=[]}, parentComment=Comment{id=62, nickname='null', email='null', profilePicture='null', commentContent='null', createTime=null, blog=null, parentComment=null, replyComments=[]}, replyComments=[]}]}
+2022-10-10 20:35:18.798  INFO 34144 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : result : redirect:/comments/53
+2022-10-10 20:35:18.798  INFO 34144 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:35:18.825  INFO 34144 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 20:35:18.880  INFO 34144 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 20:35:18.881  INFO 34144 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:36:39.294  INFO 34144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:36:39.296  INFO 34144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-10 20:36:39.346  INFO 34144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-10 20:36:46.628  INFO 37112 --- [main] com.huangxuan.PersonBlogApplication      : Starting PersonBlogApplication using Java 1.8.0_101 on LAPTOP-9KSL1NNR with PID 37112 (D:\java\项目\PersonBlog\target\classes started by 86135 in D:\java\项目\PersonBlog)
+2022-10-10 20:36:46.632 DEBUG 37112 --- [main] com.huangxuan.PersonBlogApplication      : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-10 20:36:46.633  INFO 37112 --- [main] com.huangxuan.PersonBlogApplication      : The following 1 profile is active: "dev"
+2022-10-10 20:36:47.710  INFO 37112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-10 20:36:47.833  INFO 37112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 5 JPA repository interfaces.
+2022-10-10 20:36:48.887  INFO 37112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-10 20:36:48.895  INFO 37112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-10 20:36:48.896  INFO 37112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-10 20:36:49.266  INFO 37112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-10 20:36:49.267  INFO 37112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2573 ms
+2022-10-10 20:36:49.431  INFO 37112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-10 20:36:49.486  INFO 37112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-10 20:36:49.732  INFO 37112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-10 20:36:49.896  INFO 37112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-10 20:36:50.349  INFO 37112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-10 20:36:50.384  INFO 37112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-10 20:36:51.608  INFO 37112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-10 20:36:51.617  INFO 37112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:36:53.232  WARN 37112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-10 20:36:53.615  INFO 37112 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-10 20:36:54.265  INFO 37112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-10 20:36:54.286  INFO 37112 --- [main] com.huangxuan.PersonBlogApplication      : Started PersonBlogApplication in 8.399 seconds (JVM running for 11.81)
+2022-10-10 20:37:18.640  INFO 37112 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 20:37:18.640  INFO 37112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-10 20:37:18.643  INFO 37112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-10 20:37:18.731  INFO 37112 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 20:37:19.023  INFO 37112 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 20:37:19.024  INFO 37112 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:37:20.183  INFO 37112 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 20:37:20.337  INFO 37112 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 20:37:20.338  INFO 37112 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:37:58.650  INFO 37112 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:37:58.652  INFO 37112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-10 20:37:58.682  INFO 37112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-10 20:38:05.835  INFO 38248 --- [main] com.huangxuan.PersonBlogApplication      : Starting PersonBlogApplication using Java 1.8.0_101 on LAPTOP-9KSL1NNR with PID 38248 (D:\java\项目\PersonBlog\target\classes started by 86135 in D:\java\项目\PersonBlog)
+2022-10-10 20:38:05.838 DEBUG 38248 --- [main] com.huangxuan.PersonBlogApplication      : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-10 20:38:05.838  INFO 38248 --- [main] com.huangxuan.PersonBlogApplication      : The following 1 profile is active: "dev"
+2022-10-10 20:38:06.748  INFO 38248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-10 20:38:06.875  INFO 38248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 5 JPA repository interfaces.
+2022-10-10 20:38:07.808  INFO 38248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-10 20:38:07.817  INFO 38248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-10 20:38:07.818  INFO 38248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-10 20:38:08.122  INFO 38248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-10 20:38:08.122  INFO 38248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2228 ms
+2022-10-10 20:38:08.268  INFO 38248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-10 20:38:08.308  INFO 38248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-10 20:38:08.507  INFO 38248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-10 20:38:08.649  INFO 38248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-10 20:38:09.041  INFO 38248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-10 20:38:09.059  INFO 38248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-10 20:38:09.930  INFO 38248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-10 20:38:09.950  INFO 38248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 20:38:11.239  WARN 38248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-10 20:38:11.527  INFO 38248 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-10 20:38:11.928  INFO 38248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-10 20:38:11.944  INFO 38248 --- [main] com.huangxuan.PersonBlogApplication      : Started PersonBlogApplication in 6.851 seconds (JVM running for 10.264)
+2022-10-10 20:38:16.358  INFO 38248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 20:38:16.359  INFO 38248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-10 20:38:16.360  INFO 38248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-10 20:38:16.424  INFO 38248 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 20:38:16.677  INFO 38248 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 20:38:16.677  INFO 38248 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 20:38:17.717  INFO 38248 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 20:38:17.861  INFO 38248 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 20:38:17.861  INFO 38248 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:09:10.585  INFO 38248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 21:09:10.587  INFO 38248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-10 21:09:10.622  INFO 38248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-10 21:09:19.532  INFO 9896 --- [main] com.huangxuan.PersonBlogApplication      : Starting PersonBlogApplication using Java 1.8.0_101 on LAPTOP-9KSL1NNR with PID 9896 (D:\java\项目\PersonBlog\target\classes started by 86135 in D:\java\项目\PersonBlog)
+2022-10-10 21:09:19.535 DEBUG 9896 --- [main] com.huangxuan.PersonBlogApplication      : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-10 21:09:19.536  INFO 9896 --- [main] com.huangxuan.PersonBlogApplication      : The following 1 profile is active: "dev"
+2022-10-10 21:09:20.526  INFO 9896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-10 21:09:20.715  INFO 9896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178 ms. Found 5 JPA repository interfaces.
+2022-10-10 21:09:21.923  INFO 9896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-10 21:09:21.944  INFO 9896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-10 21:09:21.945  INFO 9896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-10 21:09:22.369  INFO 9896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-10 21:09:22.369  INFO 9896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2787 ms
+2022-10-10 21:09:22.741  INFO 9896 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-10 21:09:22.851  INFO 9896 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-10 21:09:23.021  INFO 9896 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-10 21:09:23.152  INFO 9896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-10 21:09:23.625  INFO 9896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-10 21:09:23.675  INFO 9896 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-10 21:09:25.146  INFO 9896 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-10 21:09:25.169  INFO 9896 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 21:09:26.497  WARN 9896 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-10 21:09:26.915  INFO 9896 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-10 21:09:27.375  INFO 9896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-10 21:09:27.397  INFO 9896 --- [main] com.huangxuan.PersonBlogApplication      : Started PersonBlogApplication in 8.845 seconds (JVM running for 11.432)
+2022-10-10 21:10:02.153  INFO 9896 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 21:10:02.154  INFO 9896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-10 21:10:02.157  INFO 9896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-10 21:10:02.254  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 21:10:02.611  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 21:10:02.611  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:10:03.801  INFO 9896 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 21:10:03.932  INFO 9896 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:10:03.933  INFO 9896 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:10:19.199  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 21:10:19.233  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 21:10:19.233  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:10:19.860  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 21:10:19.916  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:10:19.917  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:10:22.307  INFO 9896 --- [http-nio-8080-exec-5] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/53', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[53, {}]}
+2022-10-10 21:10:22.340  INFO 9896 --- [http-nio-8080-exec-5] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 21:10:22.341  INFO 9896 --- [http-nio-8080-exec-5] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:10:22.865  INFO 9896 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/53', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[53, {}]}
+2022-10-10 21:10:22.921  INFO 9896 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:10:22.921  INFO 9896 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:10:43.761  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-10-10 21:10:43.807  WARN 9896 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-10-10 21:10:43.819  WARN 9896 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-10-10 21:10:43.832  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : result : index
+2022-10-10 21:10:43.832  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:16:19.902  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/52', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[52, {}]}
+2022-10-10 21:16:19.982  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 21:16:19.983  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:16:20.835  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/52', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[52, {}]}
+2022-10-10 21:16:20.841  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:16:20.841  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:04.465  INFO 9896 --- [http-nio-8080-exec-8] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-10-10 21:17:04.501  INFO 9896 --- [http-nio-8080-exec-8] com.huangxuan.aspact.LogAspact           : result : index
+2022-10-10 21:17:04.501  INFO 9896 --- [http-nio-8080-exec-8] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:06.366  INFO 9896 --- [http-nio-8080-exec-5] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/52', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[52, {}]}
+2022-10-10 21:17:06.413  INFO 9896 --- [http-nio-8080-exec-5] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 21:17:06.413  INFO 9896 --- [http-nio-8080-exec-5] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:07.374  INFO 9896 --- [http-nio-8080-exec-9] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/52', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[52, {}]}
+2022-10-10 21:17:07.381  INFO 9896 --- [http-nio-8080-exec-9] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:17:07.383  INFO 9896 --- [http-nio-8080-exec-9] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:19.713  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-10-10 21:17:19.749  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : result : index
+2022-10-10 21:17:19.749  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:22.663  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/52', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[52, {}]}
+2022-10-10 21:17:22.706  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 21:17:22.707  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:23.674  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/52', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[52, {}]}
+2022-10-10 21:17:23.680  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:17:23.681  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:39.004  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.post', args=[Comment{id=null, nickname='璇哥', email='2257380739@qq.com', profilePicture='null', content='666', createTime=null, blog=Blog{id=52, title='null', content='null', headPicture='null', mark='null', viewCount=null, isAdmire=false, isCopyright=false, isComment=false, isRecommend=false, issue=false, tagIds='null', createTime=null, updateTime=null, type=null, tags=[], user=null, description='null', comments=[]}, parentComment=Comment{id=-1, nickname='null', email='null', profilePicture='null', content='null', createTime=null, blog=null, parentComment=null, adminComment=false, replyComments=[]}, adminComment=false, replyComments=[]}, org.apache.catalina.session.StandardSessionFacade@7006643c]}
+2022-10-10 21:17:39.120  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : result : redirect:/comments/52
+2022-10-10 21:17:39.121  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:39.145  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/52', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[52, {}]}
+2022-10-10 21:17:39.163  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:17:39.164  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:55.034  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-10-10 21:17:55.074  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : result : index
+2022-10-10 21:17:55.075  INFO 9896 --- [http-nio-8080-exec-4] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:58.215  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/blog/50', ip='127.0.0.1', classMethod='com.huangxuan.web.IndexController.blog', args=[50, {}]}
+2022-10-10 21:17:58.239  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : result : blog
+2022-10-10 21:17:58.240  INFO 9896 --- [http-nio-8080-exec-10] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:17:59.215  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/50', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[50, {}]}
+2022-10-10 21:17:59.223  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:17:59.224  INFO 9896 --- [http-nio-8080-exec-1] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:18:11.064  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.post', args=[Comment{id=null, nickname='璇哥', email='2257380739@qq.com', profilePicture='null', content='66666666666666', createTime=null, blog=Blog{id=50, title='null', content='null', headPicture='null', mark='null', viewCount=null, isAdmire=false, isCopyright=false, isComment=false, isRecommend=false, issue=false, tagIds='null', createTime=null, updateTime=null, type=null, tags=[], user=null, description='null', comments=[]}, parentComment=Comment{id=-1, nickname='null', email='null', profilePicture='null', content='null', createTime=null, blog=null, parentComment=null, adminComment=false, replyComments=[]}, adminComment=false, replyComments=[]}, org.apache.catalina.session.StandardSessionFacade@7006643c]}
+2022-10-10 21:18:11.106  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : result : redirect:/comments/50
+2022-10-10 21:18:11.107  INFO 9896 --- [http-nio-8080-exec-3] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:18:11.114  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/50', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[50, {}]}
+2022-10-10 21:18:11.127  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:18:11.128  INFO 9896 --- [http-nio-8080-exec-7] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:19:02.984  INFO 9896 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.post', args=[Comment{id=null, nickname='璇哥', email='2257380739@qq.com', profilePicture='null', content='44444', createTime=null, blog=Blog{id=50, title='null', content='null', headPicture='null', mark='null', viewCount=null, isAdmire=false, isCopyright=false, isComment=false, isRecommend=false, issue=false, tagIds='null', createTime=null, updateTime=null, type=null, tags=[], user=null, description='null', comments=[]}, parentComment=Comment{id=65, nickname='null', email='null', profilePicture='null', content='null', createTime=null, blog=null, parentComment=null, adminComment=false, replyComments=[]}, adminComment=false, replyComments=[]}, org.apache.catalina.session.StandardSessionFacade@7006643c]}
+2022-10-10 21:19:03.030  INFO 9896 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : result : redirect:/comments/50
+2022-10-10 21:19:03.031  INFO 9896 --- [http-nio-8080-exec-6] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:19:03.037  INFO 9896 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : requestLog : RequestLog{url='http://127.0.0.1:8080/comments/50', ip='127.0.0.1', classMethod='com.huangxuan.web.CommentController.comments', args=[50, {}]}
+2022-10-10 21:19:03.055  INFO 9896 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : result : blog :: commentList
+2022-10-10 21:19:03.055  INFO 9896 --- [http-nio-8080-exec-2] com.huangxuan.aspact.LogAspact           : ---------doAfter-----------
+2022-10-10 21:19:25.260  INFO 9896 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-10 21:19:25.262  INFO 9896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-10 21:19:25.290  INFO 9896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
